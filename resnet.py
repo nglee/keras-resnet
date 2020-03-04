@@ -237,6 +237,10 @@ class ResnetBuilder(object):
         return ResnetBuilder.build(input_shape, num_outputs, basic_block, [2, 2, 2, 2])
 
     @staticmethod
+    def build_resnet_20(input_shape, num_outputs):
+        return ResnetBuilder.build(input_shape, num_outputs, basic_block, [2, 2, 2, 3])
+
+    @staticmethod
     def build_resnet_34(input_shape, num_outputs):
         return ResnetBuilder.build(input_shape, num_outputs, basic_block, [3, 4, 6, 3])
 
