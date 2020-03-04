@@ -5,3 +5,6 @@
 # dev envs
 .idea/
 *.iml
+
+# pycache
+__pycache__/*
