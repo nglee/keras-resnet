@@ -22,7 +22,7 @@ from tensorflow.keras import backend as K
 def _bn_relu(input):
     """Helper to build a BN -> relu block
     """
-    norm = BatchNormalization(axis=CHANNEL_AXIS)(input)
+    norm = BatchNormalization(axis=CHANNEL_AXIS, momentum=0.5)(input)
     return Activation("relu")(norm)
 
 
